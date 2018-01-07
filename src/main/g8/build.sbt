@@ -26,6 +26,4 @@ lazy val root = project.in(file(".")).
   aggregate(projJS, projJVM).
   settings(
     skip in publish := true,
-    compile := (compile in (projJVM, Compile)).value,
-    test := (test in (projJVM, Test)).value,
   )
