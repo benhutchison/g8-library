@@ -1,4 +1,4 @@
-lazy val $name$ = crossProject.in(file("."))
+lazy val $name$ = crossProject.crossType(CrossType.Pure).in(file("."))
   .settings(name := "$name$", organization := "com.github.benhutchison")
   .settings(scalaVersion := "2.12.4")
   .settings(addCompilerPlugin("org.spire-math" %% "kind-projector" % "0.9.4"))
