@@ -16,6 +16,7 @@ mv $name $nameOld
   g8 git@bitbucket.org:bhutchison/g8-library.g8.git --name=$name --libraryDependencies="$libraryDependencies" &&
   cp $nameOld/README.md $name/ &&
   cp $nameOld/libraryDependencies.txt $name/ &&
+  cp $nameOld/version.sbt  ${name}/version.sbt
   cp -r $nameOld/.git $name/ &&
   cp -r $nameOld/shared/src/  ${name}/shared/src/
 } || {
